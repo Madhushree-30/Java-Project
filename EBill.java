@@ -123,7 +123,7 @@ public class EBill {
         bill.printBill();
 
         // ✅ Connect to MongoDB Atlas and insert bill
-        String uri = "mongodb+srv://madhushreetamilselvan:madhu@cluster0.wx473j7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+        String uri = "mongodb+srv://username:password@cluster0.wx473j7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
         try (MongoClient mongoClient = MongoClients.create(uri)) {
             MongoDatabase database = mongoClient.getDatabase("billing"); // Creates 'billing' DB if not exists
